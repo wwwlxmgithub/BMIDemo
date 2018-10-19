@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <cn.edu.xjtu.bmidemo.BMIView
+            android:id="@+id/BMIView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:normalText="normal"
+            app:title="test BMI 1"
+            app:currentVal="100"
+            app:minVal="0"
+            app:minNormal="200"
+            app:maxNormal="400"
+            app:maxVal="600"/>
+        <cn.edu.xjtu.bmidemo.BMIView
+            android:id="@+id/BMIView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:currentVal="350"
+            app:title="test BMI 2"
+            app:rightColor="@color/yellow"
+            app:midColor="@color/colorAccent"
+            app:circleRadius="5dp"
+            app:circleStokeWidth="3dp"
+            app:lineWidth="5dp"/>
+        <cn.edu.xjtu.bmidemo.BMIView
+            android:id="@+id/BMIView3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:rightColor="@color/gray"
+            app:title="test BMI 3"
+            app:currentVal="370"
+            app:titleSize="20sp"
+            app:normalTextColor="@color/green"
+            app:normalText="normal"
+            app:normalTextSize="16sp"/>
+    </LinearLayout>
+</ScrollView>
